@@ -11,6 +11,7 @@ while getopts ":v:p:" option; do
             ;;
         *)
             echo "Bad or misplaced argument"
+            exit 1;
             ;;    
     esac
 done
