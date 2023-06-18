@@ -1,1 +1,1 @@
-bash backend/backend.sh
+bash backend/backend.sh $@
