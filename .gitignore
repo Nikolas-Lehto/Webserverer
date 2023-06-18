@@ -1,4 +1,4 @@
-logs/*
 frontend/*
-!logs/.gitkeep
 !frontend/.gitkeep
+
+backend/server.log
