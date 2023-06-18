@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Parse flags
+verbose=false
 while getopts ":v:p:" option; do
     case $option in
         p)
