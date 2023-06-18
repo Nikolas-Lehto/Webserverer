@@ -18,6 +18,7 @@ while getopts ":v:p:" option; do
 done
 
 response='HTTP/1.1 200 OK\n\n%s' "$(cat ../frontend/index.html)"
+touch ../logs/server.log
 
 while true; do 
     if [$verbose -eq true]; then
