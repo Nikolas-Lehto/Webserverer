@@ -3,13 +3,13 @@
 usage(){
     printf " \
     Usage: ./backend.sh [OPTION]...
-    -p                      Select port to host on (Default: 8888)
-    -v                      Verbose mode
-    -h                      Show this message
+     -p                      Select port to host on (Default: 8888)
+     -v                      Verbose mode
+     -h                      Show this message
     
     Examples:
-    ./backend.sh -v -p 80   Host a server on port 80 and use verbose mode
-    ./backend.sh -v         Host a server on port 8888"
+     ./backend.sh -v -p 80   Host a server on port 80 and use verbose mode
+     ./backend.sh -v         Host a server on port 8888"
 }
 
 # Parse flags
