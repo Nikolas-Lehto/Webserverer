@@ -1,1 +1,0 @@
-bash backend/backend.sh $@
