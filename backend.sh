@@ -1,15 +1,14 @@
 #!/bin/bash
 
 usage(){
-    printf " \
-    Usage: ./backend.sh [OPTION]...
-     -p                      Select port to host on (Default: 8888)
-     -v                      Verbose mode
-     -h                      Show this message
+    printf " Usage: ./backend.sh [OPTION]...
+  -p                      Select port to host on (Default: 8888)
+  -v                      Verbose mode
+  -h                      Show this message
     
-    Examples:
-     ./backend.sh -v -p 80   Host a server on port 80 and use verbose mode
-     ./backend.sh -v         Host a server on port 8888"
+ Examples:
+  ./backend.sh -v -p 80   Host a server on port 80 and use verbose mode
+  ./backend.sh -v         Host a server on port 8888\n" 
 }
 
 # Parse flags
@@ -18,6 +17,7 @@ while getopts "hvp:" option; do
     case $option in
         h)
             usage
+            exit 0;
             ;;
         v)
             verbose=true;
